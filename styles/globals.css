@@ -7,3 +7,23 @@
   padding: 0;
   margin: 0;
 }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
