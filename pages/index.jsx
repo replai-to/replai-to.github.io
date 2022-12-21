@@ -34,6 +34,44 @@ function HomePage() {
         {/* animation */}
         <div></div>
       </section>
+      {/* no need comments off --section */}
+      <section className="h-[90vh] ml-[6.25rem] mb-[10vh] flex flex-row items-center">
+        {/* text */}
+        <div className="">
+          <h3 className="">
+            With Replai, you never need to turn your comments off
+          </h3>
+          <p>Replai automatically hides irrelevent Comments on behalf of you</p>
+        </div>
+        {/* animation */}
+        <div></div>
+      </section>
+
+      {/* rules --section */}
+      <section className="h-[90vh] ml-[6.25rem] mb-[10vh] flex flex-row items-center">
+        {/* text */}
+        <div>
+          <h3>You just decide what contents should be hidden</h3>
+          <p>
+            Replai currently can realize political, religous, negative,
+            disrespectful & profanity contents in texts
+          </p>
+        </div>
+        {/* animation */}
+        <div></div>
+      </section>
+
+      {/* give try replai --section */}
+      <section className="w-[90%] m-auto h-[90vh] flex items-center mb-[20vh]">
+        <div className="w-full h-[500px] bg-blueColor rounded-2xl">
+          <Image src={GiveTryBg} alt="try-replai-bg" />
+        </div>
+      </section>
+      <footer className="h-[100px] bg-grayColor flex items-center justify-center">
+        <Link href="https://roshan-ai.ir" className="text-lg">
+          Roshan
+        </Link>
+      </footer>
     </div>
   );
 }
