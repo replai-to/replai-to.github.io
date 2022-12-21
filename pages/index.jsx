@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Button from "../components/UI/Button";
-import { Player } from "@lottiefiles/react-lottie-player";
+import { Controls, Player } from "@lottiefiles/react-lottie-player";
 
 import replaiLogo from "../assets/svg/replai_logo.svg";
 import giveTryBg from "../assets/image/give_replai_try.png";
@@ -26,7 +26,7 @@ function HomePage() {
         {/* text */}
         <Image src={elipse} alt="" className="absolute top-0 right-0" />
         <div className="w-[40%]">
-          <h1>
+          <h1 className="">
             Repl<span className="text-blueColor">ai</span> Protects Your
             Instagram Comments from misbehaviour
           </h1>
@@ -51,14 +51,15 @@ function HomePage() {
           </p>
         </div>
         {/* animation */}
-        <div className="w-[50%] flex justify-center">
+        <div className="w-[55%] flex justify-left">
           <Player
             autoplay={true}
             loop={true}
-            controls={true}
+            // controls={true}
             src={commentsOnAnimation}
-            className="w-[400px] h-[400px] drop-shadow-lg"
-          ></Player>
+            className="w-[430.5px] drop-shadow-2xl"
+            // speed={0.7}
+          />
         </div>
       </section>
 
@@ -85,9 +86,9 @@ function HomePage() {
           <Image
             src={giveTryBg}
             alt="try-replai-bg"
-            className="fixed z-10 w-full"
+            className="absolute  z-10 w-[80%] min-x-[400px]"
           />
-          <p className="w-1/3 mb-[3rem] text-center text-4xl text-whiteColor">
+          <p className="w-[600px] mb-[3rem] text-center text-4xl text-whiteColor">
             Now give it a try to see how much Replai is pleasing?
           </p>
           <Button className="bg-whiteColor text-blueColor">Try Replai</Button>
