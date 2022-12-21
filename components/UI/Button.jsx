@@ -7,7 +7,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`${className} bg-blueColor text-whiteColor text-lg py-3 px-16 rounded-md`}
+      className={`${className} text-lg py-3 px-16 rounded-md`}
       onClick={onClick}
       disabled={disabled}
       {...other}
