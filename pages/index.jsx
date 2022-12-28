@@ -9,6 +9,8 @@ import giveTryBg from "../public/assets/image/give_replai_try.png";
 import elipse from "../public/assets/svg/elipse.svg";
 import replaiFirstAnimation from "../public/assets/animations/replai_first_animation.json";
 import replaiSecondAnimation from "../public/assets/animations/replai_second_animation.json";
+import Section from "../components/UI/Section";
+import Footer from "../components/Footer/Footer";
 
 function HomePage() {
   return (
@@ -23,21 +25,22 @@ function HomePage() {
       </nav>
 
       {/* hero --section */}
-      <section className="h-[90vh] mx-[6.25rem] mb-[10vh] flex flex-row justify-between items-center">
-        {/* text */}
+      <section className="min-h-[90vh] mx-[6.25rem] mb-[10vh] flex flex-row justify-between items-center">
         <Image
           src={elipse}
           alt=""
-          className="absolute top-0 right-0 w-[700px] h-[700px]"
+          className="absolute top-0 right-0 w-[45vw]"
         />
-        <div className="w-[40%]">
-          <h1 className="">
-            Repl<span className="text-blueColor">ai</span> Protects Your
-            Instagram Comments from misbehaviour
+        {/* text */}
+        <div className="w-[50%]">
+          <h1>
+            Repl<span className="text-blueColor">ai</span> automatically <br />
+            hides irrelevant Instagram <br /> comments in real-time
           </h1>
           <p className="mt-[1.675rem] mb-[3.25rem]">
-            Thanks to its Artificial Inteligent, Replai can relieve you from
-            irrelevent comments on your posts
+            Replai helps you to keep your Instagram posts <br />
+            clean of irrelevant comments, with the power of artificial
+            intelligence.
           </p>
           <Button className="bg-blueColor text-whiteColor">Try Replai</Button>
         </div>
@@ -48,7 +51,7 @@ function HomePage() {
               autoplay={true}
               loop={true}
               src={replaiFirstAnimation}
-              className="w-[500px] drop-shadow-2xl"
+              className=" h-[80vh]  drop-shadow-2xl"
               // className="w-[700.5px] drop-shadow-2xl"
               speed={0.7}
             />
@@ -56,46 +59,17 @@ function HomePage() {
         </div>
       </section>
       {/* no need comments off --section */}
-      <section className="h-[90vh] mx-[6.25rem] mb-[10vh] flex flex-row-reverse items-center">
-        {/* text */}
-        <div className="w-[40%]">
-          <h3 className="">
-            With Replai, you never need to turn your comments off
-          </h3>
-          <p className="mt-[1.25rem]">
-            Replai automatically hides irrelevent Comments on behalf of you
-          </p>
-        </div>
-        {/* animation */}
-        <div className="w-[55%] flex justify-left">
-          <Player
-            autoplay={true}
-            loop={true}
-            // controls={true}
-            src={replaiSecondAnimation}
-            // className="w-[430.5px] drop-shadow-2xl"
-            className="w-[520.5px] drop-shadow-2xl"
-            // speed={0.7}
-          />
-        </div>
-      </section>
+      <Section
+        title="Don't even think about closing your comments"
+        description="Replai is your eyes! It hides irrelevant comments in the absence of you, automatically and in real time"
+        animationJson={replaiSecondAnimation}
+      />
 
-      {/* rules --section */}
-      <section className="h-[90vh] ml-[6.25rem] mb-[10vh] flex  flex-row items-center">
-        {/* text */}
-        <div className="w-[40%]">
-          <h3>
-            You just decide what
-            <br /> contents should be hidden
-          </h3>
-          <p className="mt-[1.25rem]">
-            Replai currently can realize political, religous, negative,
-            disrespectful & profanity contents in texts
-          </p>
-        </div>
-        {/* animation */}
-        <div className="w-[50%]"></div>
-      </section>
+      <Section
+        title="Just say what kind of content you don't like to be shown under your posts"
+        description="Replai currently can realize political, religous, negative, disrespectful & profanity contents in texts"
+        aniamtionJson={undefined}
+      />
 
       {/* give try replai --section */}
       <section
@@ -114,11 +88,8 @@ function HomePage() {
           Try Replai
         </Button>
       </section>
-      <footer className="h-[100px] bg-grayColor flex items-center justify-center">
-        <Link href="https://roshan-ai.ir" className="text-lg">
-          Roshan
-        </Link>
-      </footer>
+
+      <Footer />
     </div>
   );
 }
