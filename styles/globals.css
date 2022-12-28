@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer components {
+  .section {
+    @apply 
+  }
+} */
+
 @layer base {
   @font-face {
     font-family: Avenir;
@@ -69,7 +75,6 @@ p {
   font-size: 1.125rem;
   font-weight: 300;
 }
-
 
 /* 
   -- html for mobile size
