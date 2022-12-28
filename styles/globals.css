@@ -5,33 +5,33 @@
 @layer base {
   @font-face {
     font-family: Avenir;
-    src: url(../assets/fonts/Impact-Regular.ttf) format("woff");
+    src: url(../public/assets/fonts/Impact-Regular.ttf) format("woff");
   }
 
   @font-face {
     font-family: "Helvetica Neue";
-    src: url("../assets/fonts/Helvetica Neue/HelveticaNeue-Medium.otf")
+    src: url("../public/assets/fonts/Helvetica Neue/HelveticaNeue-Medium.otf")
       format("otf");
     font-weight: 300;
   }
 
   @font-face {
     font-family: "Helvetica Neue";
-    src: url("../assets/fonts/Helvetica Neue/HelveticaNeue-Medium.otf")
+    src: url("../public/assets/fonts/Helvetica Neue/HelveticaNeue-Medium.otf")
       format("otf");
     font-weight: 400;
   }
 
   @font-face {
     font-family: "Helvetica Neue";
-    src: url("../assets/fonts/Helvetica Neue/HelveticaNeue-Bold.otf")
+    src: url("../public/assets/fonts/Helvetica Neue/HelveticaNeue-Bold.otf")
       format("otf");
     font-weight: 700;
   }
 
   @font-face {
     font-family: "Helvetica Neue";
-    src: url("../assets/fonts/Helvetica Neue/HelveticaNeue-Heavy.otf")
+    src: url("../public/assets/fonts/Helvetica Neue/HelveticaNeue-Heavy.otf")
       format("otf");
     font-weight: 800;
   }

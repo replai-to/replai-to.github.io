@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Button from "../components/UI/Button";
-import { Controls, Player } from "@lottiefiles/react-lottie-player";
+import { Player } from "@lottiefiles/react-lottie-player";
 
-import replaiLogo from "../assets/svg/replai_logo.svg";
-import giveTryBg from "../assets/image/give_replai_try.png";
-import elipse from "../assets/svg/elipse.svg";
-import commentsOnAnimation from "../assets/animations/replai_comments_on.json";
+import replaiLogo from "../public/assets/svg/replai_logo.svg";
+import giveTryBg from "../public/assets/image/give_replai_try.png";
+import elipse from "../public/assets/svg/elipse.svg";
+import replaiFirstAnimation from "../public/assets/animations/replai_first_animation.json";
+import replaiSecondAnimation from "../public/assets/animations/replai_second_animation.json";
 
 function HomePage() {
   return (
@@ -24,7 +25,11 @@ function HomePage() {
       {/* hero --section */}
       <section className="h-[90vh] mx-[6.25rem] mb-[10vh] flex flex-row justify-between items-center">
         {/* text */}
-        <Image src={elipse} alt="" className="absolute top-0 right-0" />
+        <Image
+          src={elipse}
+          alt=""
+          className="absolute top-0 right-0 w-[700px] h-[700px]"
+        />
         <div className="w-[40%]">
           <h1 className="">
             Repl<span className="text-blueColor">ai</span> Protects Your
@@ -37,7 +42,18 @@ function HomePage() {
           <Button className="bg-blueColor text-whiteColor">Try Replai</Button>
         </div>
         {/* animation */}
-        <div className="w-[50%]"></div>
+        <div className="w-[50%]">
+          <div className="w-[600px]">
+            <Player
+              autoplay={true}
+              loop={true}
+              src={replaiFirstAnimation}
+              className="w-[500px] drop-shadow-2xl"
+              // className="w-[700.5px] drop-shadow-2xl"
+              speed={0.7}
+            />
+          </div>
+        </div>
       </section>
       {/* no need comments off --section */}
       <section className="h-[90vh] mx-[6.25rem] mb-[10vh] flex flex-row-reverse items-center">
@@ -56,8 +72,9 @@ function HomePage() {
             autoplay={true}
             loop={true}
             // controls={true}
-            src={commentsOnAnimation}
-            className="w-[430.5px] drop-shadow-2xl"
+            src={replaiSecondAnimation}
+            // className="w-[430.5px] drop-shadow-2xl"
+            className="w-[520.5px] drop-shadow-2xl"
             // speed={0.7}
           />
         </div>
@@ -81,18 +98,21 @@ function HomePage() {
       </section>
 
       {/* give try replai --section */}
-      <section className="w-[90%] m-auto h-[80vh] mb-[20vh] flex items-center">
-        <div className="w-full h-[500px] bg-blueColor rounded-2xl flex flex-col justify-center items-center">
-          <Image
-            src={giveTryBg}
-            alt="try-replai-bg"
-            className="absolute  z-10 w-[80%] min-x-[400px]"
-          />
-          <p className="w-[600px] mb-[3rem] text-center text-4xl text-whiteColor">
-            Now give it a try to see how much Replai is pleasing?
-          </p>
-          <Button className="bg-whiteColor text-blueColor">Try Replai</Button>
-        </div>
+      <section
+        className="w-[90%] m-auto h-[80vh] mb-[20vh] flex flex-col justify-center items-center rounded-2xl bg-hello
+      "
+      >
+        <Image
+          src={giveTryBg}
+          alt="try-replai-bg"
+          className="absolute h-[90%] z-10 w-[90%] min-x-[400px]"
+        />
+        <p className="w-[600px] mb-[3rem] text-center text-5xl text-whiteColor">
+          Now give it a try to see how much Replai is pleasing?
+        </p>
+        <Button className="bg-whiteColor text-blueColor cursor-pointer">
+          Try Replai
+        </Button>
       </section>
       <footer className="h-[100px] bg-grayColor flex items-center justify-center">
         <Link href="https://roshan-ai.ir" className="text-lg">

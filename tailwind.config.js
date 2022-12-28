@@ -29,6 +29,11 @@ module.exports = {
           },
         ],
         "4xl": ["2rem", { lineHeight: "2.5rem", fontWeight: "700" }],
+        "5xl": ["2.5rem", { lineHeight: "3rem", fontWeight: "700" }],
+      },
+      backgroundImage: {
+        hello:
+          "rgba(78, 105, 254, 1), url('/public/assets/image/give_replai_try.png')",
       },
     },
   },
