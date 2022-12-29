@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer components {
-  .section {
-    @apply 
+@layer components {
+  /* just hero */
+  .section:nth-of-type(2n) {
+    @apply min-h-[90vh] my-[5vh] flex flex-col justify-center items-center mx-[2rem] md:flex-row-reverse md:mx-[6.25rem] md:justify-between;
   }
-} */
+  .section:nth-of-type(2n):first-child,
+  .section:nth-of-type(2n):last-child {
+    @apply w-[100] md:w-[40%];
+  }
+  .section:nth-of-type(2n + 1) {
+    @apply h-[90vh] my-[5vh] flex flex-col justify-center items-center mx-[2rem] md:flex-row md:mx-[6.25rem] md:justify-between;
+  }
+}
 
 @layer base {
   @font-face {
@@ -51,7 +59,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 12px;
   overflow-x: hidden;
 }
 
@@ -85,25 +93,25 @@ p {
 } 
 */
 
-/* @media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   html {
     font-size: 20px;
   }

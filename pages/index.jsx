@@ -23,17 +23,17 @@ function HomePage() {
       </Head>
 
       {/* hero --section */}
-      <section className="min-h-[90vh] mx-[6.25rem] mb-[10vh] flex flex-row justify-between items-center">
+      <section className="min-h-[90vh] mx-[2rem] mb-[10vh] flex flex-row justify-between items-center md:mx-[6.25rem]">
         <Image
           src={elipse}
           alt="elipse"
-          className="absolute top-0 right-0 w-[45vw]"
+          className="-z-10 absolute top-0 right-0 w-[45vw]"
         />
         {/* text */}
-        <div className="w-[50%]">
+        <div>
           <h1>
-            Repl<span className="text-blueColor">ai</span> automatically <br />
-            hides irrelevant Instagram <br /> comments in real-time
+            Repl<span className="text-blueColor">ai</span> automatically hides
+            irrelevant Instagram comments in real-time
           </h1>
           <p className="mt-[1.675rem] mb-[3.25rem]">
             keep your Instagram posts clean of irrelevant comments, with the
@@ -42,75 +42,69 @@ function HomePage() {
           <Button className="bg-blueColor text-whiteColor">Try Replai</Button>
         </div>
         {/* animation */}
-        <div className="w-[50%]">
-          <div className="w-[600px]">
-            <Player
-              autoplay={true}
-              loop={true}
-              src={replaiFirstAnimation}
-              className=" h-[80vh] drop-shadow-2xl"
-            />
-          </div>
+        <div className="w-[0] md:w-[300px] lg:w-[500px]">
+          <Player
+            autoplay={true}
+            loop={true}
+            src={replaiFirstAnimation}
+            className="sm:hidden md:block md:w-[300px] lg:w-[500px] h-[80vh] drop-shadow-2xl"
+          />
         </div>
       </section>
 
-      <section className="h-[90vh] mx-[6.25rem] mb-[10vh] flex flex-row-reverse items-center">
-        <div className="w-[40%]">
-          <h3>
-            Don't even think about <br />
-            closing your comments
-          </h3>
+      <section className="section">
+        <div>
+          <h3>Don't even think about closing your comments</h3>
           <p className="mt-[1.25rem]">
-            Replai is your eyes! It hides irrelevant comments in <br />
-            the absence of you, automatically and in real time
+            Replai is your eyes! It hides irrelevant comments in the absence of
+            you, automatically and in real time
           </p>
         </div>
-        <div className="w-[55%] flex justify-start">
+        <div>
           <Player
             autoplay={true}
             loop={true}
             src={replaiSecondAnimation}
-            className="w-[520.5px] drop-shadow-2xl"
+            className="w-[300.5px] lg:w-[500.5px] drop-shadow-2xl"
           />
         </div>
       </section>
 
-      <section className="h-[90vh] mx-[6.25rem] mb-[10vh] flex flex-row justify-between items-center">
-        <div className="w-[45%]">
+      <section className="section">
+        <div>
           <h3>
-            Just say what kind of <br />
-            content you don't like to be shown <br />
-            under your posts
+            Just say what kind of content you don't like to be shown under your
+            posts
           </h3>
           <p className="mt-[1.25rem]">
-            Replai currently can realize political, religous,
-            <br /> negative, disrespectful & profanity contents in texts
+            Replai currently can realize political, religous, negative,
+            disrespectful & profanity contents in texts
           </p>
         </div>
-        <div className="w-[50%] flex justify-end">
+        <div className="w-[100%] mt-10 flex justify-center">
           <Image
             src={rule1}
             alt="rule1"
-            className=" w-[240px] mr-6 -translate-y-8 drop-shadow-xl"
+            className="-translate-y-0 w-[160px] lg:w-[240px] mr-6 md:-translate-y-8 drop-shadow-xl"
           />
           <Image
             src={rule2}
             alt="rule2"
-            className=" w-[240px] drop-shadow-xl translate-y-12"
+            className="translate-y-0 w-[160px] lg:w-[240px] drop-shadow-xl md:translate-y-12"
           />
         </div>
       </section>
 
       {/* give try replai --section */}
       <section
-        className="w-[90%] m-auto h-[80vh] flex flex-col justify-center items-center mb-[20vh] rounded-2xl
-        bg-blueColor bg-cover bg-center
+        className="w-[90%] m-auto h-[40vh] flex flex-col justify-center items-center mb-[20vh] rounded-2xl
+        bg-blueColor bg-cover bg-center md:h-[80vh]
       "
         style={{
           backgroundImage: `url('/assets/image/give_replai_try.png')`,
         }}
       >
-        <p className="w-[600px] mb-[3rem] text-center text-5xl text-whiteColor">
+        <p className="w-[90%] mb-[3rem] text-center text-4xl text-whiteColor md:text-5xl">
           Look at how Replai makes <br />
           your life more pleasant
         </p>
