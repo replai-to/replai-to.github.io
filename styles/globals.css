@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .link {
+    @apply flex justify-center items-center w-full h-full;
+  }
   /* just hero */
   .section:nth-of-type(2n) {
     @apply min-h-[90vh] my-[5vh] flex flex-col justify-center items-center mx-[2rem] md:flex-row-reverse md:mx-[6.25rem] md:justify-between;

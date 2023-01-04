@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 
 import { Player } from "@lottiefiles/react-lottie-player";
 
@@ -14,6 +15,7 @@ import rule1 from "../public/assets/image/rule_1.png";
 import rule2 from "../public/assets/image/rule_2.png";
 
 function HomePage() {
+  const app_url = "https://app.replai.to";
   return (
     <Layout>
       <Head>
@@ -39,7 +41,11 @@ function HomePage() {
             keep your Instagram posts clean of irrelevant comments, with the
             power of artificial intelligence
           </p>
-          <Button className="bg-blueColor text-whiteColor">Try Replai</Button>
+          <Button className="bg-blueColor text-whiteColor">
+            <Link href={app_url} className="link">
+              Try Replai
+            </Link>
+          </Button>
         </div>
         {/* animation */}
         <div className="w-[0] md:w-[300px] lg:w-[500px]">
@@ -109,7 +115,9 @@ function HomePage() {
           your life more pleasant
         </p>
         <Button className="bg-whiteColor text-blueColor cursor-pointer">
-          Try Replai
+          <Link href={app_url} className="link">
+            Try Replai
+          </Link>
         </Button>
       </section>
 
