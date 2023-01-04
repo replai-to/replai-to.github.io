@@ -28,28 +28,28 @@
   @font-face {
     font-family: "Helvetica Neue";
     src: url("../public/assets/fonts/Helvetica Neue/HelveticaNeue-Medium.otf")
-      format("otf");
+      format("truetype");
     font-weight: 300;
   }
 
   @font-face {
     font-family: "Helvetica Neue";
     src: url("../public/assets/fonts/Helvetica Neue/HelveticaNeue-Medium.otf")
-      format("otf");
+      format("truetype");
     font-weight: 400;
   }
 
   @font-face {
     font-family: "Helvetica Neue";
     src: url("../public/assets/fonts/Helvetica Neue/HelveticaNeue-Bold.otf")
-      format("otf");
+      format("truetype");
     font-weight: 700;
   }
 
   @font-face {
     font-family: "Helvetica Neue";
     src: url("../public/assets/fonts/Helvetica Neue/HelveticaNeue-Heavy.otf")
-      format("otf");
+      format("truetype");
     font-weight: 800;
   }
 }
