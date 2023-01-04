@@ -22,7 +22,7 @@
 @layer base {
   @font-face {
     font-family: Avenir;
-    src: url(../public/assets/fonts/Impact-Regular.ttf) format("woff");
+    src: url("../public/assets/fonts/Impact-Regular.ttf") format("woff");
   }
 
   @font-face {
