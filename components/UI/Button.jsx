@@ -7,7 +7,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`${className} text-lg w-[200px] h-[50px] rounded-md cursor-pointer`}
+      className={`${className} text-lg w-[220px] h-[50px] rounded-md cursor-pointer`}
       onClick={onClick}
       disabled={disabled}
       {...other}

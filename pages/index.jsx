@@ -13,6 +13,7 @@ import replaiFirstAnimation from "../public/assets/animations/replai_first_anima
 import replaiSecondAnimation from "../public/assets/animations/replai_second_animation.json";
 import rule1 from "../public/assets/image/rule_1.png";
 import rule2 from "../public/assets/image/rule_2.png";
+import Section from "../components/UI/Section";
 
 function HomePage() {
   const app_url = "https://app.replai.to";
@@ -33,11 +34,11 @@ function HomePage() {
         />
         {/* text */}
         <div>
-          <h1>
+          <h1 className="max-w-[500px]">
             Repl<span className="text-blueColor">ai</span> automatically hides
             irrelevant Instagram comments in real-time
           </h1>
-          <p className="mt-[1.675rem] mb-[3.25rem]">
+          <p className="mt-[1.675rem] mb-[3.25rem] max-w-[390px]">
             keep your Instagram posts clean of irrelevant comments, with the
             power of artificial intelligence
           </p>
@@ -58,52 +59,42 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div>
-          <h3>Don't even think about closing your comments</h3>
-          <p className="mt-[1.25rem]">
-            Replai is your eyes! It hides irrelevant comments in the absence of
-            you, automatically and in real time
-          </p>
-        </div>
-        <div>
+      <Section
+        title="Don't even think about closing your comments"
+        description="Replai is your eyes! It hides irrelevant comments in the absence of you, automatically and in real time"
+        player={
           <Player
             autoplay={true}
             loop={true}
             src={replaiSecondAnimation}
             className="w-[300.5px] lg:w-[500.5px] drop-shadow-2xl"
           />
-        </div>
-      </section>
+        }
+      />
 
-      <section className="section">
-        <div>
-          <h3>
-            Just say what kind of content you don't like to be shown under your
-            posts
-          </h3>
-          <p className="mt-[1.25rem]">
-            Replai currently can realize political, religous, negative,
-            disrespectful & profanity contents in texts
-          </p>
-        </div>
-        <div className="w-[100%] mt-10 flex justify-center">
-          <Image
-            src={rule1}
-            alt="rule1"
-            className="-translate-y-0 w-[160px] lg:w-[240px] mr-6 md:-translate-y-8 drop-shadow-xl"
-          />
-          <Image
-            src={rule2}
-            alt="rule2"
-            className="translate-y-0 w-[160px] lg:w-[240px] drop-shadow-xl md:translate-y-12"
-          />
-        </div>
-      </section>
+      <Section
+        title="Just say what kind of content you don't like to be shown under your posts"
+        description="Replai currently can realize political, religous, negative,
+        disrespectful & profanity contents in texts"
+        player={
+          <div className="w-[100%] mt-10 flex justify-center">
+            <Image
+              src={rule1}
+              alt="rule1"
+              className="-translate-y-0 w-[160px] lg:w-[240px] mr-6 md:-translate-y-8 drop-shadow-xl"
+            />
+            <Image
+              src={rule2}
+              alt="rule2"
+              className="translate-y-0 w-[160px] lg:w-[240px] drop-shadow-xl md:translate-y-12"
+            />
+          </div>
+        }
+      />
 
       {/* give try replai --section */}
-      <section
-        className="w-[90%] m-auto h-[40vh] flex flex-col justify-center items-center mb-[20vh] rounded-2xl
+      <div
+        className="w-[90%] m-auto h-[40vh] flex flex-col justify-center items-center mb-[30vh] rounded-2xl
         bg-blueColor bg-cover bg-center md:h-[80vh]
       "
         style={{
@@ -119,7 +110,7 @@ function HomePage() {
             Try Replai
           </Link>
         </Button>
-      </section>
+      </div>
 
       <Footer />
     </Layout>
