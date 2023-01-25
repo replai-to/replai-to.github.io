@@ -20,7 +20,7 @@
 @media screen and (min-width: 768px) {
   .section {
     margin: 5vh 6.25rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .section:nth-of-type(2n) {
     flex-direction: row-reverse;
@@ -30,6 +30,6 @@
   }
   .section:first-child,
   .section:last-child {
-    width: 40%;
+    width: 50%;
   }
 }
