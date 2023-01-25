@@ -6,8 +6,16 @@ export default function Nav() {
   return (
     <nav className="mt-[1.875rem] ml-[2rem] list-none md:ml-[6.25rem]">
       <li className="flex items-center">
-        <Image src={replaiLogo} alt="replai-logo" className="mr-4" />
-        <Image src={replaiTypeLogo} alt="replai-type-logo" />
+        <Image
+          src={replaiLogo}
+          alt="replai-logo"
+          className="mr-4 cursor-pointer"
+        />
+        <Image
+          src={replaiTypeLogo}
+          alt="replai-type-logo"
+          className="cursor-pointer"
+        />
       </li>
     </nav>
   );

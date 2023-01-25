@@ -82,6 +82,7 @@ function HomePage() {
               src={rule1}
               alt="rule1"
               className="-translate-y-0 w-[160px] lg:w-[240px] mr-6 md:-translate-y-8 drop-shadow-xl"
+              priority
             />
             <Image
               src={rule2}
