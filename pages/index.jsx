@@ -26,7 +26,7 @@ function HomePage() {
         <link rel="icon" href="assets/svg/fav_icon.svg" />
         <link
           rel="preload"
-          href="/fonts/Helvetica Neue/HelveticaNeue-Medium.otf"
+          href="assets/fonts/Helvetica Neue/HelveticaNeue-Medium.otf"
           as="font"
           type="font/otf"
         />
@@ -109,7 +109,7 @@ function HomePage() {
         bg-blueColor bg-cover bg-center md:h-[80vh]
       "
         style={{
-          backgroundImage: `url('/assets/image/give_replai_try.png')`,
+          backgroundImage: `url('assets/image/give_replai_try.png')`,
         }}
       >
         <p className="max-w-[225px] mb-[3rem] text-center text-4xl text-whiteColor md:max-w-[595px] md:text-5xl">
