@@ -14,6 +14,7 @@ import replaiSecondAnimation from "../public/assets/animations/replai_second_ani
 import rule1 from "../public/assets/image/rule_1.png";
 import rule2 from "../public/assets/image/rule_2.png";
 import Section from "../components/UI/Section";
+import heroMobile from "../public/assets/image/hero-mobile.svg";
 
 function HomePage() {
   const app_url = "https://app.replai.to";
@@ -32,7 +33,7 @@ function HomePage() {
       </Head>
 
       {/* hero --section */}
-      <section className="min-h-[90vh] mx-[2rem] mb-[10vh] flex flex-row justify-between items-center md:mx-[6.25rem]">
+      <section className="min-h-[90vh] mx-[2rem] mb-[10vh] flex flex-row justify-center items-center md:mx-[6.25rem] md:justify-between">
         <Image
           src={elipse}
           alt="elipse"
@@ -40,7 +41,10 @@ function HomePage() {
         />
         {/* text */}
         <div>
-          <h1 className="max-w-[500px]">
+          <div className="w-full">
+            <Image className="w-full mt-8 md:w-0" src={heroMobile} alt="" />
+          </div>
+          <h1 className="max-w-[340px] md:max-w-[420px]">
             Repl<span className="text-blueColor">ai</span> automatically hides
             irrelevant Instagram comments in real-time
           </h1>
@@ -83,17 +87,17 @@ function HomePage() {
         description="Replai currently can realize political, religous, negative,
         disrespectful & profanity contents in texts"
         player={
-          <div className="w-[100%] mt-10 flex justify-center">
+          <div className="w-[100%] flex justify-center">
             <Image
               src={rule1}
               alt="rule1"
-              className="-translate-y-0 w-[160px] lg:w-[240px] mr-6 md:-translate-y-8 drop-shadow-xl"
+              className="-translate-y-0 w-[120px] sm:w-[160px] lg:w-[240px] mr-6 md:-translate-y-8 drop-shadow-xl"
               priority
             />
             <Image
               src={rule2}
               alt="rule2"
-              className="translate-y-0 w-[160px] lg:w-[240px] drop-shadow-xl md:translate-y-12"
+              className="translate-y-0 w-[120px] sm:w-[160px] lg:w-[240px] drop-shadow-xl md:translate-y-12"
             />
           </div>
         }
@@ -101,25 +105,24 @@ function HomePage() {
 
       {/* give try replai --section */}
       <div
-        className="w-[90%] m-auto h-[40vh] flex flex-col justify-center items-center mb-[30vh] rounded-2xl
+        className="w-[90%] m-auto h-[50vh] flex flex-col justify-center items-center mb-[30vh] rounded-2xl
         bg-blueColor bg-cover bg-center md:h-[80vh]
       "
         style={{
           backgroundImage: `url('/assets/image/give_replai_try.png')`,
         }}
       >
-        <p className="w-[90%] mb-[3rem] text-center text-4xl text-whiteColor md:text-5xl">
-          Look at how Replai makes <br />
-          your life more pleasant
+        <p className="max-w-[225px] mb-[3rem] text-center text-4xl text-whiteColor md:max-w-[595px] md:text-5xl">
+          Look at how Replai makes your social life more pleasant
         </p>
-        <Button className="bg-whiteColor text-blueColor cursor-pointer">
+        <Button className="my-[2rem] bg-whiteColor text-blueColor cursor-pointer">
           <Link href={app_url} className="link">
             Try Replai
           </Link>
         </Button>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </Layout>
   );
 }

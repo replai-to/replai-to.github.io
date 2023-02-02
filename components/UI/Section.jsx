@@ -1,5 +1,3 @@
-import { Player } from "@lottiefiles/react-lottie-player";
-
 import classes from "./Section.module.css";
 
 function Section({ title, description, player }) {
