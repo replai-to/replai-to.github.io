@@ -22,7 +22,7 @@ function HomePage() {
       <Head>
         <title>Replai</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/assets/svg/fav_icon.svg" />
+        <link rel="icon" href="assets/svg/fav_icon.svg" />
         <link
           rel="preload"
           href="/fonts/Helvetica Neue/HelveticaNeue-Medium.otf"
